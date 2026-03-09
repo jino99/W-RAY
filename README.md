@@ -71,7 +71,7 @@ See `LEGAL_DISCLAIMER.txt` for complete terms.
 ### 1. Clone or Download
 ```bash
 git clone https://github.com/yourusername/wray.git
-cd wray
+cd w-ray
 ```
 
 ### 2. Install Dependencies
@@ -86,13 +86,13 @@ pip install mnemonic bitcoinlib requests
 
 ### 3. Run the Program
 ```bash
-python wray.py
+python w-ray.py
 ```
 
 On Linux/Mac:
 ```bash
-chmod +x wray.py
-./wray.py
+chmod +x w-ray.py
+./w-ray.py
 ```
 
 ---
@@ -332,15 +332,6 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 ❌ Unauthorized access to funds
 
 **By using this tool, you agree to use it legally and ethically.**
-
----
-
-## 📞 Contact & Support
-
-- **Creator**: G0blin0ps
-- **Version**: 2.1
-- **Documentation**: See `usage.txt` for detailed guide
-- **Legal**: See `LEGAL_DISCLAIMER.txt`
 
 ---
 
