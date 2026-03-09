@@ -70,7 +70,7 @@ See `LEGAL_DISCLAIMER.txt` for complete terms.
 
 ### 1. Clone or Download
 ```bash
-git clone https://github.com/yourusername/w-ray.git
+git clone https://github.com/jino99/w-ray.git
 cd w-ray
 ```
 
