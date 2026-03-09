@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 jino
+Copyright (c) 2024 G0blin0ps
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,66 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+=============================================================================
+
+ADDITIONAL TERMS FOR THIS SOFTWARE:
+
+1. EDUCATIONAL USE ONLY
+   This software is intended for educational and research purposes only.
+   Use for unauthorized access to Bitcoin wallets is strictly prohibited
+   and illegal.
+
+2. NO WARRANTY
+   This software is provided "as is" without any warranty. The authors are
+   not responsible for any damages, losses, or legal consequences resulting
+   from the use or misuse of this software.
+
+3. USER RESPONSIBILITY
+   Users are solely responsible for ensuring their use of this software
+   complies with all applicable laws and regulations in their jurisdiction.
+
+4. ETHICAL USE
+   Users agree to use this software ethically and legally, respecting the
+   property and privacy rights of others.
+
+5. LIMITATION OF LIABILITY
+   In no event shall the authors or copyright holders be liable for any
+   claim, damages, or other liability arising from the use of this software,
+   including but not limited to:
+   - Financial losses
+   - Legal consequences
+   - Data breaches
+   - Security incidents
+   - Any form of damages
+
+6. INDEMNIFICATION
+   Users agree to indemnify and hold harmless the authors from any claims,
+   damages, or expenses arising from their use of this software.
+
+7. COMPLIANCE
+   Users must comply with:
+   - All applicable local, national, and international laws
+   - Computer fraud and abuse legislation
+   - Cryptocurrency regulations
+   - Privacy and data protection laws
+
+8. PROHIBITED USES
+   This software shall NOT be used for:
+   - Unauthorized access to Bitcoin wallets
+   - Theft or fraud
+   - Any illegal activities
+   - Circumventing security measures
+   - Violating others' rights
+
+BY USING THIS SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ AND AGREE TO
+THESE TERMS IN ADDITION TO THE MIT LICENSE ABOVE.
+
+=============================================================================
+
+For questions regarding this license, please refer to:
+- The included LEGAL_DISCLAIMER.txt file
+- The README.md file
+- The usage.txt file
+
+=============================================================================

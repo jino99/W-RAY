@@ -1,0 +1,271 @@
+=============================================================================
+                         LEGAL DISCLAIMER
+                    W-RAY Bitcoin Wallet Tool
+=============================================================================
+
+IMPORTANT: READ THIS ENTIRE DOCUMENT BEFORE USING THIS SOFTWARE
+
+Last Updated: 2024
+Version: 2.1
+
+=============================================================================
+1. PURPOSE AND INTENDED USE
+=============================================================================
+
+This software (W-RAY) is provided EXCLUSIVELY for:
+
+✓ EDUCATIONAL purposes - Learning about Bitcoin wallet mechanics
+✓ RESEARCH purposes - Understanding cryptographic security
+✓ PERSONAL USE - Recovering YOUR OWN wallets with proper authorization
+✓ SECURITY TESTING - With explicit written permission
+✓ ACADEMIC STUDY - For cryptocurrency and blockchain education
+
+This software is NOT intended for:
+
+✗ Unauthorized access to Bitcoin wallets
+✗ Theft or fraud of any kind
+✗ Circumventing security measures
+✗ Any illegal activities
+✗ Accessing funds that do not belong to you
+
+=============================================================================
+2. PROBABILITY AND EXPECTATIONS
+=============================================================================
+
+USERS MUST UNDERSTAND:
+
+The probability of randomly generating a Bitcoin wallet with funds is:
+- Approximately 1 in 2^256 (for private keys)
+- Approximately 1 in 2^160 (for addresses)
+
+To put this in perspective:
+- There are more possible Bitcoin addresses than atoms in the observable universe
+- Random generation will NOT find funded wallets
+- This is a DEMONSTRATION of cryptographic security strength
+
+Expected Results:
+- Success rate for random generation: ~0.00000000000000000000000000000001%
+- This tool will likely NEVER find a funded wallet through random generation
+- Any success would be statistically equivalent to impossible
+
+=============================================================================
+3. LEGAL RESTRICTIONS
+=============================================================================
+
+BY USING THIS SOFTWARE, YOU AGREE:
+
+1. You will ONLY use this software in compliance with ALL applicable laws
+2. You will NOT use this software to access wallets you do not own
+3. You will NOT use this software for theft, fraud, or unauthorized access
+4. You understand that unauthorized access to Bitcoin wallets is ILLEGAL
+5. You accept FULL RESPONSIBILITY for your use of this software
+
+JURISDICTIONAL CONSIDERATIONS:
+
+- Computer fraud and abuse laws apply in most jurisdictions
+- Unauthorized access to computer systems is a crime
+- Theft of cryptocurrency is prosecutable
+- You are responsible for knowing and following your local laws
+
+Countries/Regions with Specific Laws:
+- United States: 18 U.S.C. § 1030 (Computer Fraud and Abuse Act)
+- European Union: GDPR, Computer Misuse Act
+- United Kingdom: Computer Misuse Act 1990
+- Canada: Criminal Code Section 342.1
+- Australia: Criminal Code Act 1995
+- And many others...
+
+=============================================================================
+4. NO WARRANTY
+=============================================================================
+
+THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.
+
+The author(s) make NO WARRANTIES, express or implied, including but not
+limited to:
+
+- Merchantability
+- Fitness for a particular purpose
+- Non-infringement
+- Accuracy or reliability
+- Error-free operation
+- Security
+
+USE AT YOUR OWN RISK.
+
+=============================================================================
+5. LIMITATION OF LIABILITY
+=============================================================================
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW:
+
+The author(s), contributors, and distributors of this software SHALL NOT
+be liable for:
+
+- Any direct, indirect, incidental, special, or consequential damages
+- Loss of profits, data, or use
+- Legal consequences of misuse
+- Damages resulting from use or inability to use the software
+- Any claims by third parties
+- Any illegal activities performed using this software
+
+This limitation applies even if advised of the possibility of such damages.
+
+=============================================================================
+6. USER RESPONSIBILITIES
+=============================================================================
+
+AS A USER, YOU ARE RESPONSIBLE FOR:
+
+1. Understanding the legal implications of using this software
+2. Ensuring your use complies with all applicable laws
+3. Securing any private keys or sensitive data
+4. Not using the software for illegal purposes
+5. Any consequences of your actions while using this software
+6. Consulting legal counsel if uncertain about legality
+
+=============================================================================
+7. SECURITY CONSIDERATIONS
+=============================================================================
+
+IMPORTANT SECURITY WARNINGS:
+
+⚠️  Never share generated private keys or seed phrases
+⚠️  Any private keys displayed should be considered compromised
+⚠️  Do not send funds to addresses generated by this tool for testing
+⚠️  The author is not responsible for lost or stolen funds
+⚠️  Use this tool only on trusted, secure computers
+⚠️  Generated wallets should be considered for educational purposes only
+
+=============================================================================
+8. ETHICAL CONSIDERATIONS
+=============================================================================
+
+USERS ARE EXPECTED TO:
+
+✓ Act ethically and responsibly
+✓ Respect others' property and privacy
+✓ Use the tool only for legitimate purposes
+✓ Report any security vulnerabilities responsibly
+✓ Not engage in malicious activities
+
+USERS MUST NOT:
+
+✗ Attempt to access wallets they don't own
+✗ Use the tool to harm others
+✗ Violate anyone's privacy or property rights
+✗ Engage in theft or fraud
+✗ Distribute or promote illegal use
+
+=============================================================================
+9. INDEMNIFICATION
+=============================================================================
+
+You agree to INDEMNIFY and HOLD HARMLESS the author(s), contributors, and
+distributors from any claims, damages, losses, liabilities, and expenses
+(including legal fees) arising from:
+
+- Your use or misuse of this software
+- Your violation of this disclaimer
+- Your violation of any laws or regulations
+- Any third-party claims related to your use
+
+=============================================================================
+10. MODIFICATIONS AND UPDATES
+=============================================================================
+
+The author reserves the right to:
+
+- Modify or discontinue the software at any time
+- Update this disclaimer without notice
+- Change terms and conditions
+- Add or remove features
+
+Continued use after changes constitutes acceptance of new terms.
+
+=============================================================================
+11. OPEN SOURCE AND DISTRIBUTION
+=============================================================================
+
+This software may be distributed under an open source license (see LICENSE
+file). Distribution and modification are subject to:
+
+- License terms (MIT, GPL, etc.)
+- This disclaimer
+- All applicable laws
+- Ethical use requirements
+
+Redistributors must include this disclaimer and cannot be held liable for
+misuse by end users.
+
+=============================================================================
+12. JURISDICTION AND DISPUTES
+=============================================================================
+
+Any disputes arising from use of this software shall be governed by:
+
+- Laws of the user's jurisdiction
+- International computer crime laws where applicable
+- Local regulations regarding cryptocurrency
+
+Users waive any claims against the author(s) and contributors.
+
+=============================================================================
+13. SEVERABILITY
+=============================================================================
+
+If any provision of this disclaimer is found to be unenforceable or invalid,
+that provision shall be limited or eliminated to the minimum extent necessary
+so that this disclaimer shall otherwise remain in full force and effect.
+
+=============================================================================
+14. ENTIRE AGREEMENT
+=============================================================================
+
+This disclaimer constitutes the entire agreement between the user and the
+author(s) regarding the use of this software and supersedes all prior
+agreements or understandings.
+
+=============================================================================
+15. ACCEPTANCE
+=============================================================================
+
+BY USING THIS SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD,
+AND AGREE TO BE BOUND BY THIS DISCLAIMER.
+
+IF YOU DO NOT AGREE WITH THESE TERMS, DO NOT USE THIS SOFTWARE.
+
+=============================================================================
+16. CONTACT AND REPORTING
+=============================================================================
+
+Security Vulnerabilities:
+- Report responsibly to the author
+- Do not publicly disclose until patched
+- Allow reasonable time for fixes
+
+Illegal Use:
+- Report illegal activities to appropriate authorities
+- Author is not responsible for monitoring use
+
+=============================================================================
+17. ACKNOWLEDGMENT OF UNDERSTANDING
+=============================================================================
+
+By using W-RAY, you explicitly acknowledge that you understand:
+
+✓ The probability of success is essentially zero
+✓ This is an educational/research tool
+✓ Unauthorized access is illegal
+✓ You are fully responsible for your actions
+✓ There is no warranty or guarantee
+✓ The author is not liable for any damages or legal issues
+✓ You will use this software legally and ethically
+
+=============================================================================
+
+FOR EDUCATIONAL AND RESEARCH PURPOSES ONLY
+
+USE RESPONSIBLY. USE LEGALLY. USE ETHICALLY.
+
+=============================================================================

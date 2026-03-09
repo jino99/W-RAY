@@ -1,0 +1,7 @@
+Create btc_database.txt with format:
+   address<TAB>balance_in_satoshis
+   
+   Example:
+   1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa	5000000000
+   3J98t1WpEZ73CNmYviecrnyiWrnqRhWNLy	100000000
+   bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh	25000000

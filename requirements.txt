@@ -1,0 +1,17 @@
+# W-RAY Bitcoin Wallet Generator & Recovery Tool
+# Python dependencies
+
+# BIP39 Mnemonic seed phrase generation
+mnemonic>=0.20
+
+# Bitcoin library for address generation
+bitcoinlib>=0.6.14
+
+# HTTP requests for balance checking
+requests>=2.31.0
+
+# Standard library dependencies (usually included with Python):
+# - sqlite3 (database management)
+# - hashlib (cryptographic hashing)
+# - secrets (secure random generation)
+# - itertools (efficient iteration tools)
