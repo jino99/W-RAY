@@ -1,0 +1,19 @@
+# W-RAY v3.0 — required & recommended dependencies
+
+# BIP39 mnemonic generation (required)
+mnemonic>=0.20
+
+# Fast secp256k1 C bindings — ~10x faster than pure-Python fallback (strongly recommended)
+coincurve>=13.0.0
+
+# Async HTTP for non-blocking online balance checks (recommended)
+aiohttp>=3.9.0
+
+# Sync HTTP fallback for balance checks
+requests>=2.31.0
+
+# Rich terminal UI — tables, panels, progress bars (recommended)
+rich>=13.0.0
+
+# Standard library only (no install needed):
+#   sqlite3, hashlib, hmac, struct, asyncio, multiprocessing, os, sys

@@ -1,0 +1,241 @@
+=============================================================================
+                    W-RAY - USAGE GUIDE
+=============================================================================
+
+INSTALLATION:
+-------------
+1. Install Python 3.7 or higher
+2. Install dependencies:
+   pip install -r requirements.txt
+
+3. Prepare database file (optional):
+   - Download or create btc_database.txt or btc_database.tsv
+   - Format: address<TAB>balance_in_satoshis
+   - Example: 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa	5000000000
+
+RUNNING THE PROGRAM:
+--------------------
+python wray.py
+
+OR (on Linux/Mac):
+chmod +x wray.py
+./wray.py
+
+
+MENU OPTIONS:
+-------------
+
+[1] Generate Wallet & Check Balance
+    - Generates Bitcoin wallets randomly
+    - Checks balance online via blockchain APIs
+    - Single mode: Generate one wallet
+    - Continuous mode: Generate until stopped (CTRL+C)
+    - Requires internet connection
+    - Wallets with balance saved to: gen_wallets.txt
+
+[2] Search BTC Wallet with Balance (Database)
+    - Generates random wallets continuously
+    - Checks if addresses exist in LOCAL database
+    - Works OFFLINE (no internet needed)
+    - Much faster than online checking
+    - Found wallets saved to: found_wallets.txt
+    - Requires database created with option [6]
+
+[3] Search with Advanced Passphrase Attack
+    - Like option [2] but tests MULTIPLE passphrases per seed
+    - Tests: empty, common passwords, patterns, hybrids
+    - Default: 100 passphrases per seed
+    - Slower but more thorough
+    - Configure settings with option [8]
+
+[4] Target Specific Address Attack
+    - Bruteforce a specific Bitcoin address
+    - 4 attack modes:
+      Mode 1: Random seeds only (no passphrase)
+      Mode 2: Random seeds + common passphrases
+      Mode 3: Random seeds + custom passphrase list
+      Mode 4: Known seed + passphrase bruteforce
+    - Useful if you know address but lost seed/passphrase
+
+[5] Recovery Bitcoin Wallet
+    - Recover wallet from existing seed phrase
+    - Enter 12 or 24 word seed phrase
+    - Optional: add passphrase (13th word)
+    - Displays all addresses and private keys
+    - Checks if addresses are in database
+    - Save recovered data to file
+
+[6] Convert TXT/TSV to SQLite Database
+    - Converts text file to SQLite database
+    - Two modes:
+      * Scan and Validate: Analyzes format, validates data (slower, safer)
+      * Direct Conversion: Fast, no validation (assumes TAB separated)
+    - Required for options [2] and [3]
+    - Creates: btc_database.db
+
+[7] Database Statistics
+    - Shows database information:
+      * Total addresses
+      * Total balance
+      * Cache size
+      * File size
+
+[8] Passphrase Attack Settings
+    - Configure passphrase attack behavior
+    - Set max passphrases per seed (1-1000)
+    - Enable/disable strategies: common, patterns, hybrid
+    - View loaded passphrases
+    - Reload passphrase file
+
+[9] Exit
+    - Exit the program
+
+
+DATABASE SETUP:
+---------------
+
+Option A - Use existing dump:
+1. Download Bitcoin address dump (TXT or TSV format)
+2. Place file as: btc_database.txt or btc_database.tsv
+3. Run program, select option [6]
+4. Choose conversion mode
+5. Wait for conversion to complete
+
+Option B - Create custom database:
+1. Create btc_database.txt with format:
+   address<TAB>balance_in_satoshis
+   
+   Example:
+   1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa	5000000000
+   3J98t1WpEZ73CNmYviecrnyiWrnqRhWNLy	100000000
+   bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh	25000000
+
+2. Run option [6] to convert to SQLite
+
+
+PASSPHRASE CUSTOMIZATION:
+--------------------------
+
+Create passphrases.txt with one passphrase per line:
+mypassword123
+bitcoin2024
+secretphrase
+MyWallet!
+
+The program will automatically load this file and use it in:
+- Option [3]: Advanced passphrase attack
+- Option [4]: Custom passphrase list mode
+- Option [8]: View/reload passphrases
+
+
+OUTPUT FILES:
+-------------
+
+found_wallets.txt
+  - Wallets found in database (options 2, 3, 4)
+  - Contains: seed, passphrase, private key, addresses, balance
+
+gen_wallets.txt
+  - Wallets generated with online balance (option 1)
+  - Contains: seed, private key, addresses, balance
+
+recovered_wallet.txt
+  - Wallet recovered from seed phrase (option 5)
+  - Contains: seed, passphrase, private key, addresses
+
+
+TIPS & TRICKS:
+--------------
+
+1. Database size matters:
+   - Larger database = more addresses to check
+   - More chances to find matches
+   - Slower queries (but still fast with SQLite)
+
+2. Passphrase attack:
+   - Use option [8] to configure
+   - More passphrases = slower but more thorough
+   - Start with 50-100 passphrases per seed
+
+3. Performance:
+   - Option [2] is fastest (offline, no passphrase)
+   - Option [3] is slower but more comprehensive
+   - Option [1] is slowest (API calls)
+
+4. Success probability:
+   - Extremely low for random generation
+   - This is educational/research tool
+   - See LEGAL_DISCLAIMER.txt
+
+5. Stop anytime:
+   - Press CTRL+C to stop any search
+   - Progress will be displayed
+   - Found wallets are saved immediately
+
+
+TROUBLESHOOTING:
+----------------
+
+Error: Module 'mnemonic' not found
+  Solution: pip install mnemonic
+
+Error: Module 'bitcoinlib' not found
+  Solution: pip install bitcoinlib
+
+Error: Module 'requests' not found
+  Solution: pip install requests
+
+Error: Database not loaded
+  Solution: Create database with option [6]
+
+Error: API timeout
+  Solution: Check internet connection, try again
+
+Slow performance
+  Solution: 
+  - Use option [2] instead of [1]
+  - Reduce passphrases per seed in option [8]
+  - Use SSD for database file
+
+
+ADVANCED USAGE:
+---------------
+
+Running 24/7:
+  - Use screen or tmux on Linux
+  - Run in background: nohup python wray.py &
+  - Check progress: tail -f found_wallets.txt
+
+Multiple instances:
+  - Copy database to different folders
+  - Run multiple instances in parallel
+  - Each will find different addresses
+
+Custom strategies:
+  - Edit PASSPHRASE_CONFIG in code
+  - Add custom passphrases to passphrases.txt
+  - Modify PassphraseGenerator class
+
+
+WARNINGS:
+---------
+
+⚠️  Never share your seed phrase or private keys
+⚠️  This tool is for educational/research purposes only
+⚠️  Success probability is astronomically low
+⚠️  Read LEGAL_DISCLAIMER.txt before using
+⚠️  Backup your own wallets properly
+⚠️  Don't use this for illegal activities
+
+
+SUPPORT:
+--------
+
+For issues, questions, or contributions:
+- Check README.md
+- Review code documentation
+- Read LEGAL_DISCLAIMER.txt
+
+Created by: G0blin0ps
+Version: 2.1
+=============================================================================
