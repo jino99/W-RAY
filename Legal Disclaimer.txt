@@ -5,7 +5,7 @@
 
 IMPORTANT: READ THIS ENTIRE DOCUMENT BEFORE USING THIS SOFTWARE
 
-Last Updated: 2024
+Last Updated: 2026
 Version: 2.1
 
 =============================================================================
