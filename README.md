@@ -11,7 +11,6 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)
 ![Status](https://img.shields.io/badge/Project-Active-success)
-![Security](https://img.shields.io/badge/Security-Audit%20Recommended-orange)
 
 **Advanced Bitcoin Wallet Generation and Recovery Tool with Passphrase Attack Engine**
 
